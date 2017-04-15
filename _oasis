@@ -1,0 +1,12 @@
+OASISFormat: 0.4
+Name:        FinancialMetricsApi
+Version:     0.0.1
+Synopsis:    REST API for calculating financial metrisc
+Authors:     Kyle Holzinger
+License:     MIT
+
+Executable "app"
+  Path:       .
+  BuildTools: ocamlbuild
+  MainIs:     app.ml
+  
