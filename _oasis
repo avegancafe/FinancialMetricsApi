@@ -6,7 +6,9 @@ Authors:     Kyle Holzinger
 License:     MIT
 
 Executable "main"
-  Path:       .
-  BuildTools: ocamlbuild
-  MainIs:     main.ml
+  Path:          src/
+  BuildTools:    ocamlbuild
+  MainIs:        main.ml
+  BuildDepends:  opium
+
   
