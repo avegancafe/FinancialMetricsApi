@@ -5,8 +5,8 @@ Synopsis:    REST API for calculating financial metrisc
 Authors:     Kyle Holzinger
 License:     MIT
 
-Executable "app"
+Executable "main"
   Path:       .
   BuildTools: ocamlbuild
-  MainIs:     app.ml
+  MainIs:     main.ml
   
