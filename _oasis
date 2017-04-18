@@ -9,6 +9,5 @@ Executable "main"
   Path:          src/
   BuildTools:    ocamlbuild
   MainIs:        main.ml
-  BuildDepends:  opium
+  BuildDepends:  opium.unix
 
-  
