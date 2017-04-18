@@ -1,9 +1,12 @@
 open Opium.Std
+open Deal_term
 
 type person = {
   name: string;
   age: int;
 }
+
+(* Example endpoints *)
 
 let json_of_person { name ; age } =
   let open Ezjsonm in
@@ -21,6 +24,9 @@ let print_person = get "/person/:name/:age" begin fun req ->
     } in
     `Json (person |> json_of_person) |> respond'
   end
+
+(* endof Example endpoints *)
+
 
 let deal_term_calculation = post "/deal_term_calculations" begin fun req ->
     App.json_of_body_exn req |> Lwt.map (fun _json -> respond (`Json _json))
